@@ -38,13 +38,14 @@ Partial Class Form1
         Me.txtSalary = New System.Windows.Forms.TextBox()
         Me.txtDepartment = New System.Windows.Forms.TextBox()
         Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.dgvEmployees, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnUpdate
         '
         Me.btnUpdate.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdate.Location = New System.Drawing.Point(689, 281)
+        Me.btnUpdate.Location = New System.Drawing.Point(689, 271)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(175, 49)
         Me.btnUpdate.TabIndex = 1
@@ -54,7 +55,7 @@ Partial Class Form1
         'btnDelete
         '
         Me.btnDelete.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(689, 335)
+        Me.btnDelete.Location = New System.Drawing.Point(689, 316)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(175, 49)
         Me.btnDelete.TabIndex = 2
@@ -64,7 +65,7 @@ Partial Class Form1
         'btnLoad
         '
         Me.btnLoad.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoad.Location = New System.Drawing.Point(689, 390)
+        Me.btnLoad.Location = New System.Drawing.Point(689, 362)
         Me.btnLoad.Name = "btnLoad"
         Me.btnLoad.Size = New System.Drawing.Size(175, 49)
         Me.btnLoad.TabIndex = 3
@@ -74,7 +75,7 @@ Partial Class Form1
         'btnSeach
         '
         Me.btnSeach.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeach.Location = New System.Drawing.Point(689, 445)
+        Me.btnSeach.Location = New System.Drawing.Point(689, 408)
         Me.btnSeach.Name = "btnSeach"
         Me.btnSeach.Size = New System.Drawing.Size(175, 49)
         Me.btnSeach.TabIndex = 4
@@ -189,12 +190,23 @@ Partial Class Form1
         Me.txtSearch.Size = New System.Drawing.Size(773, 32)
         Me.txtSearch.TabIndex = 16
         '
+        'btnExit
+        '
+        Me.btnExit.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(689, 453)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(175, 49)
+        Me.btnExit.TabIndex = 17
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(960, 552)
+        Me.ClientSize = New System.Drawing.Size(960, 543)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.txtDepartment)
         Me.Controls.Add(Me.txtSalary)
@@ -236,4 +248,5 @@ Partial Class Form1
     Friend WithEvents txtSalary As TextBox
     Friend WithEvents txtDepartment As TextBox
     Friend WithEvents txtSearch As TextBox
+    Friend WithEvents btnExit As Button
 End Class
